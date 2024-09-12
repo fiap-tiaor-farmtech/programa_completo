@@ -31,6 +31,7 @@
 ```r
 install.packages("dplyr")
 ```
+10. O programa `calculo_geo.py` utiliza a biblioteca geopy, especificamente a classe Nominatim, para realizar a geocodificação, ou seja, a conversão de um endereço (composto por rua, número, cidade e estado) em coordenadas geográficas (latitude e longitude)
 
 ## Executar o programa Python
 1. No cmd ou no editor de código
