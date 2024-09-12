@@ -11,23 +11,24 @@
 1. Baixar todos os programas num diretório.
 2. Certifique que todos os arquivos estão dentro do mesmo diretório: 
    `calculo_geo.py`, `app.py`, `requirements.txt`, `weather_csv.R`, `weather.R`, `statistics.R`e `.env`
-3. Editar o arquivo `.env`
+3. Criar uma api key no site: (https://openweathermap.org/api)    
+4. Editar o arquivo `.env`
     ```sh
     R_HOME=<caminho-de-instalação-do-R>
     API_KEY=<seu-openweathermap-api-key>
     ```
-4. Ir no prompt de comando ou em editor de código
-5. Navegue até o diretório onde estão os programas 
-6. Instalar a biblioteca geopy:
+5. Ir no prompt de comando ou em editor de código
+6. Navegue até o diretório onde estão os programas 
+7. Instalar a biblioteca geopy:
     ```sh
     pip install -r requirements.txt
     ```
-7. Ou pode instalar direto a biblioteca:
+8. Ou pode instalar direto a biblioteca:
    ```sh
     pip install pip install geopy
     ```
-8. Ir no R ou no RStudio
-9. Instalar o pacote `dplyr`
+9. Ir no R ou no RStudio
+10. Instalar o pacote `dplyr`
 ```r
 install.packages("dplyr")
 ```
