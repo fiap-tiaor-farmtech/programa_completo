@@ -130,7 +130,7 @@ install.packages("dplyr")
             Média:
             Desvio Padrão: 
             Dados estatísticos exibidos com sucesso!
-   ```
+         ```
 
 ## Motivos de cada cálculo:
 1. Gastos de Insumo (R$):
