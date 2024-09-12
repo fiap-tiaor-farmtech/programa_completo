@@ -99,3 +99,51 @@ install.packages("dplyr")
          11. Preço de insumo gasto para cada saca de soja
          12. Voltar ao menu anterior
    ```
+9. No menu: 5. Executar Programa R para exibir informações meteorológicas:
+    Vai aparecer esse print com as informações de clima da localização:
+      ```sh 
+         Previsão do tempo para :
+         Descrição: 
+         Temperatura:
+         Sensação térmica:
+         Umidade:
+         Velocidade do vento:
+         Dados de clima exibido com sucesso!
+   ```
+   10. No menu: 6. Executar Programa R para cálculos estatísticos:
+        ```sh
+            Estatísticas de Gastos de Insumo (R$):
+            Mínimo: 
+            Máximo: 
+            Média: 
+            Desvio Padrão: 
+            
+            Estatísticas de Lucro (R$):
+            Mínimo: 
+            Máximo:
+            Média:
+            Desvio Padrão: 
+            
+            Estatísticas de Produção Total (Milho + Soja) (kg):
+            Mínimo:
+            Máximo: 
+            Média:
+            Desvio Padrão: 
+            Dados estatísticos exibidos com sucesso!
+   ```
+   ## Motivos de cada cálculo:
+
+1. Gastos de Insumo (R$):
+Mínimo e Máximo: Ajuda a entender o intervalo de variação dos custos de insumo, permitindo identificar o custo mais baixo e mais alto registrado. Isso é crucial para comparar cenários e otimizar a alocação de recursos.
+Média: Fornece uma visão geral do valor médio dos gastos ao longo do tempo ou de várias fazendas/produções, o que ajuda no planejamento financeiro.
+Desvio Padrão: Indica a variabilidade dos gastos. Um desvio padrão alto sugere que os gastos variam muito de uma safra para outra ou de uma operação para outra, enquanto um desvio padrão baixo indica que os custos são relativamente consistentes.
+2. Lucro (R$):
+Mínimo e Máximo: Essencial para ver qual foi o menor e o maior retorno financeiro, o que ajuda a entender a lucratividade nas melhores e piores condições.
+Média: Dá uma ideia do lucro típico, que pode ser usada para estimar o retorno esperado sobre o investimento ao longo de várias safras.
+Desvio Padrão: Um desvio padrão alto no lucro sugere que os resultados financeiros são imprevisíveis, o que pode ser um sinal de risco elevado ou de uma variabilidade significativa nas condições de mercado, clima, etc.
+3. Produção Total (Milho + Soja) (kg):
+Mínimo e Máximo: Mostra os extremos de produção, revelando a capacidade mínima e máxima das operações.
+Média: Dá uma ideia da produção média total, que pode ser útil para definir metas e prever o volume de vendas.
+Desvio Padrão: Informa o quão variada é a produção entre os anos ou entre diferentes áreas, ajudando a identificar se a produção é consistente ou se há fatores externos que afetam muito os resultados (como clima, pragas, práticas de cultivo).
+4. Conclusão:
+Calcular essas estatísticas permite que você tenha uma visão abrangente da variação dos custos, lucros e produção, o que é fundamental para decisões estratégicas, otimização de recursos e previsão de resultados futuros. Portanto, esses cálculos fazem sentido para uma análise detalhada de seu processo agrícola ou econômico.
