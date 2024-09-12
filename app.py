@@ -33,7 +33,7 @@ def dados_inseridos():
     #verifica se os dados essenciais foram inseridos (largura e comprimento)
     return largura_terreno is not None and comprimento_terreno is not None
     
-# Função para chamar o script R que exibe informações meteorológicas
+#função para chamar o script R que exibe informações meteorológicas
 def chamar_script_r():
     # Chama o script R
     try:
@@ -42,7 +42,7 @@ def chamar_script_r():
     except subprocess.CalledProcessError as e:
         print(f"Erro ao executar o script R: {e}")
         
-# Função para chamar o script R para calculos estatísticos
+#função para chamar o script R para calculos estatísticos
 def chamar_script_r1():
     # Chama o script R
     try:
@@ -74,7 +74,7 @@ def calcular_gasto_producao(area_total, proporcao_milho):
     #print(f"Debug-: quantidade de insumo_milho: {insumo_milho}, quantidade de insumo_soja: {insumo_soja}")
     #print(f"Debug-: Produção total de milho: {producao_total_milho}, Produção total de soja: {producao_total_soja}")
 
-    # Verificar se a área de milho ou soja é válida (maior que 0)
+    #verificar se a área de milho ou soja é válida (maior que 0)
     if producao_total_milho > 0:
         # Cálculo do preço de venda
         preco_venda_milho_total = (producao_total_milho / 60) * (preco_venda_milho_saca) # R$
@@ -99,7 +99,7 @@ def calcular_gasto_producao(area_total, proporcao_milho):
     #print(f"Debug: Preço de venda milho: {preco_venda_milho_total}, Preço de venda soja: {preco_venda_soja_total}")
     #print(f"Debug: Valor líquido milho: {valor_liquido_milho}, Valor líquido soja: {valor_liquido_soja}")
 
-    # Retorna todos os valores calculados, incluindo os preços de venda e insumos
+    #retorna todos os valores calculados, incluindo os preços de venda e insumos
     valor_total_gastos = preco_insumo_milho_total +preco_insumo_soja_total
     valor_total_venda = preco_venda_milho_total + preco_venda_soja_total
     valor_lucro = valor_total_venda - valor_total_gastos
@@ -126,12 +126,12 @@ def calcular_gasto_producao(area_total, proporcao_milho):
 def saida_dados():
     global culturas, figura_geometrica, largura_terreno, comprimento_terreno, latitude, longitude, espacamento, area_total, numero_de_fileiras, volume_por_fileira, volume_total
 
-    # Verifica se os dados foram inseridos
+    #verifica se os dados foram inseridos
     if not dados_inseridos():
         print("Erro: Nenhum dado foi inserido ainda. Por favor, insira os dados primeiro.")
         return
     
-    # Calcula a área total do terreno
+    #calcula a área total do terreno
     area_total = largura_terreno * comprimento_terreno
 
     if espacamento > 0:
@@ -156,7 +156,7 @@ def saida_dados():
         #area_total_milho = None
         #area_total_soja = None
 
-    # Nome do arquivo CSV
+    #nome do arquivo CSV
     csv_filename = 'saida_dados.csv'
 
     while True:
@@ -168,7 +168,7 @@ def saida_dados():
         opcao = input("Escolha uma opção: ")
 
         if opcao == "1":
-            # Exibe os dados
+            #exibe os dados
             print(f"{'Culturas:':<60}{culturas}")
             print(f"{'Figura geométrica:':<60}{figura_geometrica}")
             print(f"{'Largura do terreno:':<60}{largura_terreno:.2f} m")
@@ -205,7 +205,7 @@ def saida_dados():
                 print(" ")
                 
         elif opcao == "3":
-            # Preenche a lista de dados para o CSV
+            #preenche a lista de dados para o CSV
             csv_data = []
             csv_data.append(['culturas', str(culturas)])
             csv_data.append(['figura geometrica', figura_geometrica])
@@ -226,7 +226,7 @@ def saida_dados():
             else:
                 csv_data.append(['geolocalizacao', 'nao disponivel'])        
 
-            # Adicionar preços e valor líquido para cada proporção de milho e soja
+            #adicionar preços e valor líquido para cada proporção de milho e soja
             for proporcao in range(0, 101, 10):
                 #print('<<<calcular_gasto_producao>>>')
                 resultado = calcular_gasto_producao(area_total,proporcao / 100)  # Chama a função calcular_gasto_producao
@@ -250,7 +250,7 @@ def saida_dados():
                     f'producao total soja (kg): {resultado["producao_total_soja"]:.2f}'
                 ])
                 #print(csv_data)
-            # Gera o arquivo CSV com ";" como separador
+            #gera o arquivo CSV com ";" como separador
             try:
                 with open(csv_filename, mode='w', newline='', encoding='utf-8') as file:
                     writer = csv.writer(file, delimiter=';')
