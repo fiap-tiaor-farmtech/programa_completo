@@ -17,7 +17,7 @@ Os insumos selecionados para as culturas foram:
 - **Milho**: Fosfato, Potássio e Nitrogênio
 - **Soja**: Fosfato e Potássio
 
-Como ainda não estava claro quais cálculos seriam feitos no programa em **R**, decidimos, antes de começar o desenvolvimento em Python, estruturar os cálculos estatísticos a serem realizados. Assim, optamos por calcular os seguintes indicadores:
+Decidimos, antes de começar o desenvolvimento em Python, estruturar os cálculos estatísticos a serem realizados no programa **R**. Assim, optamos por calcular os seguintes indicadores:
 
 ### Estatísticas calculadas:
 
