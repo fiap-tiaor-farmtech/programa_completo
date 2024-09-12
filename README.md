@@ -38,14 +38,14 @@ Como ainda não estava claro quais cálculos seriam feitos no programa em **R**,
 
 Essas estatísticas são fundamentais para uma análise detalhada dos custos, lucros e produção, permitindo decisões estratégicas mais acertadas, otimização de recursos e previsão de resultados futuros. Portanto, a aplicação dessas métricas é essencial para uma análise agrícola ou econômica robusta.
 
-## Funcionalidades da aplicação em Python:
+### Funcionalidades da aplicação em Python:
 - Inclusão de dados como largura, comprimento e endereço do local, que serão usados para verificar as condições climáticas.
 - Cálculo de área, número de fileiras, quantidade de insumos necessários, custos, valor líquido e bruto, além do gasto com insumos.
 - Uso de dados fixos no código, como tipos de cultura, forma geométrica, quantidade de milho e soja produzida por metro quadrado, preços de saca (60 kg), e custo de insumos por saca. Esses valores podem ser posteriormente alterados no programa.
 - Saída de dados detalhada com todas as informações (obrigatoriedade de gerar um arquivo **CSV**, que será usado pelos programas em R).
 - Execução de programas R para verificar as condições climáticas do local e realizar os cálculos estatísticos.
 
-### Passo a passo para executar os programas
+## Passo a passo para executar os programas
 
 1. Baixar todos os programas num diretório.
 2. Certifique que todos os arquivos estão dentro do mesmo diretório: 
