@@ -11,7 +11,7 @@
 1. Baixar todos os programas num diretório.
 2. Certifique que todos os arquivos estão dentro do mesmo diretório: 
    `calculo_geo.py`, `app.py`, `requirements.txt`, `weather_csv.R`, `weather.R`, `statistics.R`e `.env`
-3. Criar uma api key no site: https://openweathermap.org/api    
+3. Criar uma api key do OpenWeatherMap no site: https://openweathermap.org/api    
 4. Editar o arquivo `.env`
     ```sh
     R_HOME=<caminho-de-instalação-do-R>
