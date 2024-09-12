@@ -111,27 +111,27 @@ install.packages("dplyr")
          Velocidade do vento:
          Dados de clima exibido com sucesso!
    ```
-   10. No menu: 6. Executar Programa R para cálculos estatísticos:
-        ```sh
-            Estatísticas de Gastos de Insumo (R$):
-            Mínimo: 
-            Máximo: 
-            Média: 
-            Desvio Padrão: 
-            
-            Estatísticas de Lucro (R$):
-            Mínimo: 
-            Máximo:
-            Média:
-            Desvio Padrão: 
-            
-            Estatísticas de Produção Total (Milho + Soja) (kg):
-            Mínimo:
-            Máximo: 
-            Média:
-            Desvio Padrão: 
-            Dados estatísticos exibidos com sucesso!
-         ```
+10. No menu: 6. Executar Programa R para cálculos estatísticos:
+    ```sh
+         Estatísticas de Gastos de Insumo (R$):
+         Mínimo: 
+         Máximo: 
+         Média: 
+         Desvio Padrão: 
+         
+         Estatísticas de Lucro (R$):
+         Mínimo: 
+         Máximo:
+         Média:
+         Desvio Padrão: 
+         
+         Estatísticas de Produção Total (Milho + Soja) (kg):
+         Mínimo:
+         Máximo: 
+         Média:
+         Desvio Padrão: 
+         Dados estatísticos exibidos com sucesso!
+    ```
 
 ## Motivos de cada cálculo:
 1. Gastos de Insumo (R$):
