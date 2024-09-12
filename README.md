@@ -6,30 +6,46 @@
 - Pacote dplyr
 - OpenWeatherMap API key
 
-## Motivos de cada cálculo estatístico que será feito pelo programa `statistics.R`:
-1. Gastos de Insumo (R$):
+## Introdução
+A **FarmTech Solutions** firmou um contrato com uma fazenda que investe em inovação e tecnologia para otimizar sua produtividade, com o objetivo de migrar para a Agricultura Digital. Para atender esse cliente estratégico, a FarmTech iniciará o desenvolvimento de uma aplicação em **Python** focada em análises agrícolas.
 
-Mínimo e Máximo: Ajuda a entender o intervalo de variação dos custos de insumo, permitindo identificar o custo mais baixo e mais alto registrado. Isso é crucial para comparar cenários e otimizar a alocação de recursos.
-Média: Fornece uma visão geral do valor médio dos gastos ao longo do tempo ou de várias fazendas/produções, o que ajuda no planejamento financeiro.
-Desvio Padrão: Indica a variabilidade dos gastos. Um desvio padrão alto sugere que os gastos variam muito de uma safra para outra ou de uma operação para outra, enquanto um desvio padrão baixo indica que os custos são relativamente consistentes.
+Selecionamos as culturas de **milho** e **soja** por diversas razões: são culturas altamente rentáveis, apresentam uma alta produção por metro quadrado, permitem múltiplas colheitas ao ano e não dependem tanto de variações climáticas extremas, como seca ou excesso de chuva.
 
-2. Lucro (R$):
+A forma geométrica escolhida para representar as áreas de cultivo foi o **retângulo**, já que as plantações são organizadas em fileiras retas, facilitando o manejo, a irrigação e o uso de maquinário agrícola, como colheitadeiras e pulverizadores. O formato retangular maximiza o uso eficiente do espaço e facilita o tráfego de máquinas entre as fileiras.
 
-Mínimo e Máximo: Essencial para ver qual foi o menor e o maior retorno financeiro, o que ajuda a entender a lucratividade nas melhores e piores condições.
-Média: Dá uma ideia do lucro típico, que pode ser usada para estimar o retorno esperado sobre o investimento ao longo de várias safras.
-Desvio Padrão: Um desvio padrão alto no lucro sugere que os resultados financeiros são imprevisíveis, o que pode ser um sinal de risco elevado ou de uma variabilidade significativa nas condições de mercado, clima, etc.
+Os insumos selecionados para as culturas foram:
+- **Milho**: Fosfato, Potássio e Nitrogênio
+- **Soja**: Fosfato e Potássio
 
-3. Produção Total (Milho + Soja) (kg):
+Como ainda não estava claro quais cálculos seriam feitos no programa em **R**, decidimos, antes de começar o desenvolvimento em Python, estruturar os cálculos estatísticos a serem realizados. Assim, optamos por calcular os seguintes indicadores:
 
-Mínimo e Máximo: Mostra os extremos de produção, revelando a capacidade mínima e máxima das operações.
-Média: Dá uma ideia da produção média total, que pode ser útil para definir metas e prever o volume de vendas.
-Desvio Padrão: Informa o quão variada é a produção entre os anos ou entre diferentes áreas, ajudando a identificar se a produção é consistente ou se há fatores externos que afetam muito os resultados (como clima, pragas, práticas de cultivo).
+### Estatísticas calculadas:
 
-4. Conclusão:
+1. **Gastos com Insumos (R$)**:
+   - **Mínimo e Máximo**: Permitem identificar o intervalo de variação nos custos dos insumos, auxiliando na comparação entre cenários e otimização de recursos.
+   - **Média**: Oferece uma visão geral dos gastos médios, útil para planejamento financeiro.
+   - **Desvio Padrão**: Mede a variabilidade dos gastos, sendo importante para identificar consistência ou variações significativas de safra para safra.
 
-Calcular essas estatísticas permite que você tenha uma visão abrangente da variação dos custos, lucros e produção, o que é fundamental para decisões estratégicas, otimização de recursos e previsão de resultados futuros. Portanto, esses cálculos fazem sentido para uma análise detalhada de seu processo agrícola ou econômico.
+2. **Lucro (R$)**:
+   - **Mínimo e Máximo**: Essenciais para entender o retorno financeiro nas melhores e piores condições.
+   - **Média**: Indica o lucro médio ao longo do tempo, ajudando na projeção de retornos sobre investimentos.
+   - **Desvio Padrão**: Avalia a estabilidade dos lucros; um desvio padrão alto pode sinalizar riscos ou grandes variações nas condições de mercado.
 
-## Passo a passo
+3. **Produção Total (Milho + Soja) (kg)**:
+   - **Mínimo e Máximo**: Mostram os extremos da produção, revelando os limites de capacidade das operações.
+   - **Média**: Indica a produção média, útil para definir metas e prever volumes de vendas.
+   - **Desvio Padrão**: Mede a variação da produção ao longo dos anos ou entre áreas, indicando consistência ou a influência de fatores externos como clima e pragas.
+
+Essas estatísticas são fundamentais para uma análise detalhada dos custos, lucros e produção, permitindo decisões estratégicas mais acertadas, otimização de recursos e previsão de resultados futuros. Portanto, a aplicação dessas métricas é essencial para uma análise agrícola ou econômica robusta.
+
+## Funcionalidades da aplicação em Python:
+- Inclusão de dados como largura, comprimento e endereço do local, que serão usados para verificar as condições climáticas.
+- Cálculo de área, número de fileiras, quantidade de insumos necessários, custos, valor líquido e bruto, além do gasto com insumos.
+- Uso de dados fixos no código, como tipos de cultura, forma geométrica, quantidade de milho e soja produzida por metro quadrado, preços de saca (60 kg), e custo de insumos por saca. Esses valores podem ser posteriormente alterados no programa.
+- Saída de dados detalhada com todas as informações (obrigatoriedade de gerar um arquivo **CSV**, que será usado pelos programas em R).
+- Execução de programas R para verificar as condições climáticas do local e realizar os cálculos estatísticos.
+
+### Passo a passo para executar os programas
 
 1. Baixar todos os programas num diretório.
 2. Certifique que todos os arquivos estão dentro do mesmo diretório: 
