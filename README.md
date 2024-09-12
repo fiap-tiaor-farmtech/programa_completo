@@ -131,8 +131,8 @@ install.packages("dplyr")
             Desvio Padrão: 
             Dados estatísticos exibidos com sucesso!
    ```
-   ## Motivos de cada cálculo:
 
+## Motivos de cada cálculo:
 1. Gastos de Insumo (R$):
 Mínimo e Máximo: Ajuda a entender o intervalo de variação dos custos de insumo, permitindo identificar o custo mais baixo e mais alto registrado. Isso é crucial para comparar cenários e otimizar a alocação de recursos.
 Média: Fornece uma visão geral do valor médio dos gastos ao longo do tempo ou de várias fazendas/produções, o que ajuda no planejamento financeiro.
