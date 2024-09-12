@@ -3,7 +3,7 @@
 - Python 3.x
 - Biblioteca geopy
 - R
-- rpy2 library
+- Pacote dplyr
 - OpenWeatherMap API key
 
 ## Passo a passo
