@@ -20,6 +20,7 @@ Os insumos selecionados para as culturas foram:
 Decidimos, antes de começar o desenvolvimento em Python, estruturar os cálculos estatísticos a serem realizados no programa **R**. Assim, optamos por calcular os seguintes indicadores:
 
 ### Estatísticas calculadas:
+Calculamos os custos de insumos e o lucro líquido para várias proporções de milho e soja, variando de 0% a 100% de milho, com a porcentagem complementar para a soja. Esses cálculos resultaram em diversos valores, sobre os quais aplicamos as estatísticas que apresentamos a seguir.
 
 1. **Gastos com Insumos (R$)**:
    - **Mínimo e Máximo**: Permitem identificar o intervalo de variação nos custos dos insumos, auxiliando na comparação entre cenários e otimização de recursos.
