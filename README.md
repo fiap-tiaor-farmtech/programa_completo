@@ -104,7 +104,7 @@ install.packages("dplyr")
          Digite o estado (abreviado):
     ```
 6. No menu: 2. Saída de Dados:
-    Fazer todas as opções:
+   Fazer todas as opções!
       ```sh      
          1. Exibir dados
          2. Exibir insumos para cada proporção de culturas (para cálculos estatísticos)
